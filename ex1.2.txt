@@ -1,0 +1,62 @@
+import React from 'react'
+import ReactDOM from 'react-dom'
+
+  const exercises1 = 10;
+  const exercises2 = 7;
+  const exercises3 = 14;
+
+const Header = () => {
+  return (
+  <div>
+    <h1> Half Stack application development </h1>
+  </div>)
+}
+
+const Part1 = () => {
+  return (
+  <div>
+    <p> Fundamentals of React {exercises1} </p>
+  </div>)
+}
+
+const Part2 = () => {
+  return (
+  <div>
+    <p> Using props to pass data {exercises2} </p>
+  </div>)
+}
+
+const Part3 = () => {
+  return (
+  <div>
+    <p> State of a component {exercises3} </p>
+  </div>)
+}
+
+const Content = () => {
+  return (
+  <div>
+    <Part1 />
+    <Part2 />
+    <Part3 />
+  </div>)
+}
+
+const Total = () => {
+  return (
+  <div>
+    <p>Number of exercises {exercises1 + exercises2 + exercises3}</p>
+  </div>)
+}
+
+const App = () => {
+  return (
+    <div>
+      <Header />
+      <Content />
+      <Total />
+    </div>
+  )
+}
+
+ReactDOM.render(<App />, document.getElementById('root'))
